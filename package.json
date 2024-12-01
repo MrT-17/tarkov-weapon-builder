@@ -1,0 +1,45 @@
+{
+  "name": "tarkov-weapon-builder",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "commit": "cz",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "nuxt": "^3.14.1592",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/js": "^9.16.0",
+    "commitizen": "^4.3.1",
+    "commitlint": "^19.6.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.13.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.1",
+    "typescript-eslint": "^8.16.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  },
+  "packageManager": "pnpm@9.14.4"
+}

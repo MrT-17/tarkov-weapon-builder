@@ -1,0 +1,6 @@
+@use "variables";
+
+html,
+body {
+  background-color: variables.$color-background-light;
+}

@@ -25,7 +25,7 @@ logs
 
 # GraphQL
 schema.graphql
-src/graphql
+graphql
 
 # Sandbox
 pages/sandbox.vue

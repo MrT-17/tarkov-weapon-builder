@@ -7,29 +7,36 @@
     "commit": "cz",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "prepare": "husky"
+    "prepare": "husky",
+    "preview": "nuxt preview",
+    "schema": "npx graphql-codegen --config codegen.ts"
   },
   "dependencies": {
-    "nuxt": "^3.14.1592",
+    "nuxt": "^3.15.0",
+    "pinia": "^2.3.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.0",
+    "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
-    "@eslint/js": "^9.16.0",
+    "@eslint/js": "^9.17.0",
+    "@graphql-codegen/cli": "^5.0.3",
     "commitizen": "^4.3.1",
-    "commitlint": "^19.6.0",
+    "commitlint": "^19.6.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.16.0",
+    "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-vue": "^9.32.0",
-    "globals": "^15.13.0",
+    "globals": "^15.14.0",
+    "graphql-config": "^5.1.3",
+    "graphql-request": "^7.1.2",
     "husky": "^9.1.7",
-    "prettier": "^3.4.1",
-    "typescript-eslint": "^8.16.0"
+    "prettier": "^3.4.2",
+    "sass": "^1.83.1",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.0"
   },
   "config": {
     "commitizen": {
@@ -41,5 +48,5 @@
       "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
     }
   },
-  "packageManager": "pnpm@9.14.4"
+  "packageManager": "pnpm@9.15.1"
 }
